@@ -5,8 +5,6 @@ import 'package:wechat/services/database_service.dart';
 class AuthService {
   final FirebaseAuth firebaseAuth = FirebaseAuth.instance;
 
-
-
   Future loginWithEmailAndPassword(String email, String password) async {
     try {
       User user = (await firebaseAuth.signInWithEmailAndPassword(
@@ -20,6 +18,7 @@ class AuthService {
       return e.message;
     }
   }
+
   Future registerUserWithEmailandPassword(
       String fullName, String email, String password) async {
     try {
@@ -37,12 +36,12 @@ class AuthService {
   }
 
   Future signOut() async {
-    try{
+    try {
       await HelperFunctions.saveUserloggedInStatus(false);
       await HelperFunctions.saveUserNameSF("");
       await HelperFunctions.saveUserEmailSF("");
       await firebaseAuth.signOut();
-    }catch(e){
+    } catch (e) {
       return null;
     }
   }

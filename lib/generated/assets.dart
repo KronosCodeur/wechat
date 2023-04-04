@@ -3,7 +3,8 @@ class Assets {
   Assets._();
 
   static const String assets116791Chat = 'assets/116791-chat.json';
-  static const String assets59839CommnetAnimation = 'assets/59839-commnet-animation.json';
-  static const String assets81154TypingInChat = 'assets/81154-typing-in-chat.json';
-
+  static const String assets59839CommnetAnimation =
+      'assets/59839-commnet-animation.json';
+  static const String assets81154TypingInChat =
+      'assets/81154-typing-in-chat.json';
 }

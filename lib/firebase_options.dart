@@ -67,8 +67,10 @@ class DefaultFirebaseOptions {
     messagingSenderId: '412621717214',
     projectId: 'wechat-ea467',
     storageBucket: 'wechat-ea467.appspot.com',
-    androidClientId: '412621717214-bde5sfulkoufui1dhofvidm1g0hr5apa.apps.googleusercontent.com',
-    iosClientId: '412621717214-s3kmbqqclich6kom3ams5fa80k69bg3e.apps.googleusercontent.com',
+    androidClientId:
+        '412621717214-bde5sfulkoufui1dhofvidm1g0hr5apa.apps.googleusercontent.com',
+    iosClientId:
+        '412621717214-s3kmbqqclich6kom3ams5fa80k69bg3e.apps.googleusercontent.com',
     iosBundleId: 'com.coding.kronos.wechat.wechat',
   );
 
@@ -78,8 +80,10 @@ class DefaultFirebaseOptions {
     messagingSenderId: '412621717214',
     projectId: 'wechat-ea467',
     storageBucket: 'wechat-ea467.appspot.com',
-    androidClientId: '412621717214-bde5sfulkoufui1dhofvidm1g0hr5apa.apps.googleusercontent.com',
-    iosClientId: '412621717214-s3kmbqqclich6kom3ams5fa80k69bg3e.apps.googleusercontent.com',
+    androidClientId:
+        '412621717214-bde5sfulkoufui1dhofvidm1g0hr5apa.apps.googleusercontent.com',
+    iosClientId:
+        '412621717214-s3kmbqqclich6kom3ams5fa80k69bg3e.apps.googleusercontent.com',
     iosBundleId: 'com.coding.kronos.wechat.wechat',
   );
 }
