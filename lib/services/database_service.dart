@@ -1,3 +1,4 @@
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class DatabaseService {
@@ -15,7 +16,9 @@ class DatabaseService {
     return await userCollection.doc(uid).set({
       "fullName": fullName,
       "email": email,
+      "links":[],
       "groups": [],
+      "friends":[],
       "profilePic": "",
       "uid": uid,
     });
@@ -81,6 +84,10 @@ class DatabaseService {
   searchByName(String groupName) {
     return groupCollection.where("groupName", isEqualTo: groupName).get();
   }
+  searchByEmail(String friendEmail){
+    return userCollection.where("email",isEqualTo: friendEmail);
+  }
+
 
   // function -> bool
   Future<bool> isUserJoined(
